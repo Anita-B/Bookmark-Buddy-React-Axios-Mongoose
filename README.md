@@ -1,5 +1,8 @@
 # Bookmark-Buddy-React-Axios-Mongoose
 
+
+/**************** This project is still in active development ****************/
+
 • Purpose: Website that bookmarks pages visited while providing the user the ability to take notes of the link location and categorize them. Additional feature will be to create a Browser Extension that has the user login and takes notes/adds URL on the spot.
 
 
