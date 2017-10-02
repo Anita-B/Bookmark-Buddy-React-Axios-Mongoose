@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookmark Buddy</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="png" href="img/favicon.png">
+</head>
+
+<body >
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top py-3">
+    <div class="container">
+      <a href="/" class="navbar-brand">
+        <img src="img/logo.svg" width="60" height="60" alt=""><h3 class="d-inline align-middle logoText"> Bookmark Buddy</h3>
+      </a>
+      <!-- hamburger menu -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+
+        <!-- sign up -->
+          <button class="btn btn-primary btn-sm navBtnSignup"><li class="nav-item">
+            <a href="/signup" class="nav-link navBtnText"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Sign up</a>
+          </li></button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Grey section -->
+  <section class="py-3 mb-4 greySection">
+    <div class="container">
+      <div class="row"></div>
+    </div>
+  </section>
+
+  <!-- Log in -->
+  <section id="login">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 mx-auto">
+          <div class="card">
+            <div class="card-header">
+              <h4>Login</h4>
+            </div>
+            <div class="card-body">
+              <form class="login" action="/login" method="post">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input id="email-input" type="email" class="form-control x" required>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+
+                  <input type="password" class="form-control" id="password-input" required>
+
+
+                </div>
+                <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+                  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                  <span class="sr-only">Error:</span> <span class="msg"></span>
+                </div>
+                <input type="submit" class="btn btn-primary btn-block" value="Login">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<hr/>
+    <ul class ="account">
+     <li id ="user"> Don't have an account?</li>
+
+     <a href="#" id ="creatAcc"><li>Create account</li></a>
+     <li id="copyRight">Copyright 2017 Bookmark Buddy. All rights reserved.</li>
+   </ul>
+
+</section>
+
+<!-- footer -->
+  <footer id="main-footer" class="py-3 bg-primary text-white fixed-bottom">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-6 ml-auto">
+          <p class="lead"></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/navbar-fixed.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+
+</body>
+</html>

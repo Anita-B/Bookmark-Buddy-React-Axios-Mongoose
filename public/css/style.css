@@ -1,0 +1,599 @@
+body {
+  margin-top: 105px;
+  font-family: 'Roboto', "sans-serif";
+ }
+
+ /*============================*/
+   /*navbar - used in all pages */
+ /*============================*/
+.navbar {
+  box-shadow: 2px 2px 5px #3292a6;
+  /*opacity: 0.9;*/
+  background: #fff;
+ }
+
+.navbar .nav-item {
+  font-size: 1.4rem;
+  padding-right: 20px;
+  }
+
+/*text next to the logo*/
+.logoText{
+  color:#3f4b50;
+  }
+
+/* text on all button on the navbar */
+.navBtnText{
+  color:white !important;
+  font-size:14px;
+ }
+
+
+/*============================*/
+/*used only in main page*/
+/*============================*/
+
+/*Add and User button in the navbar*/
+.navBtn{
+  height:45px;
+  width:70px;
+  margin-right:5px;
+  border-radius:3px;
+  background-color:#3292a6!important;
+}
+
+/*log out Button in the navbar*/
+.navBtnlogout{
+  height:45px;
+  width:100px;
+  margin-right:5px;
+  border-radius:3px;
+  background-color:#3292a6!important;
+}
+
+/*----search-----*/
+.rowSearch {
+ background-color:#393a3e;
+ display:block;
+ }
+#searchBarContainer{
+ background-color:#393a3e;
+ width:100% !important;
+ height:60px;
+ padding:0;
+ margin:0;
+}
+
+#searchBar{
+ height:20px;
+ margin:0px;
+ padding-top:1%;
+ padding-bottom:1%;
+ background-color:#393a3e;
+ color:#838386;
+ font-size: 22px;
+ font-weight:bold;
+ border:0px;
+}
+
+/*----saved-----*/
+.rowSaved {
+ display: block;
+}
+
+/*Changing the color and style of the placeholder text*/
+::-webkit-input-placeholder {
+  color:#838386 !important;
+  transition: opacity 250ms ease-in-out;
+  font-size: 22px;
+}
+
+:focus::-webkit-input-placeholder{
+  opacity:0.5;
+}
+
+.searchButton{
+ background-color:#393a3e;
+ border:0px !important;
+ margin-top: -10px !important;
+}
+/* FontAwesome icon for search*/
+.fa-search{
+ color:#838386;
+/*font-size: 22px;
+padding-bottom: 5px;*/
+}
+
+/*-----add-----*/
+.input-group .form-control {
+  width: 100%;
+  /*position: absolute;*/
+}
+
+.fa-floppy-o {
+  color:#fff;
+}
+
+td .searchButton{
+ margin-top: .75rem;
+ margin-bottom: 0px!important;
+}
+
+/*-----modal-----*/
+.modal-header{
+  border-top-left-radius:4px;
+  border-top-right-radius:4px;
+}
+
+.modal-content{
+  border-radius:5px;
+  background-color:#f7f7f7;
+}
+.form-control{
+  border-radius:3px !important;
+}
+
+.cancleBtn{
+  background-color:#393a3e !important;
+  border-radius:3px;
+}
+
+.saveBtn{
+  border-radius: 3px !important;
+}
+
+/*----table----*/
+thead{
+  background-color: #393a3e;
+}
+
+tbody{
+ color: #393a3e;
+}
+
+.tableHead{
+  height:60px !important;
+}
+
+.aTable{
+  color: #393a3e !important;
+}
+
+#tableRowHolder{
+ height:50px !important;
+}
+
+.fa-pencil-square-o{
+  color: #393a3e;
+  padding-right:2px;
+}
+
+.fa-share-square-o{
+  color: #393a3e;
+  padding-right:2px;
+}
+
+.fa-trash-o{
+  color: #393a3e;
+}
+
+/*============================*/
+  /*used only in login page*/
+/*============================*/
+
+/* signUp button on the navbar*/
+.navBtnSignup{
+  height:45px;
+  width:100px;
+  margin-right:5px;
+  border-radius:3px;
+  background-color:#3292a6!important;
+  }
+
+ .greySection{
+   background-color:#2e3438!important;
+ }
+
+/*login Form */
+#login{
+  margin-top:4%;
+  margin-bottom:4%;
+}
+
+h4{
+  color:#6a6a6a;
+ }
+
+/*last part of the login page*/
+li{
+  list-style-type:none;
+ }
+
+.account{
+  margin-top:5px;
+ }
+
+#user{
+  color:#838386;
+  font-size:14px;
+  text-align:center;
+   }
+
+#creatAcc{
+  color:#2c879c;
+  font-weight:bolder;
+  text-align:center;
+}
+
+#copyRight{
+  color:#838386;
+  font-size:12px;
+  text-align:center;
+}
+
+/*============================*/
+  /*used only in sign Up page*/
+/*============================*/
+
+/*signin botton on the nav bar*/
+.navBtnSignin{
+  height:45px;
+  width:100px;
+  margin-right:5px;
+  border-radius:3px;
+  background-color:#3292a6!important;
+  }
+
+.adjustpage{
+  margin-top:4%;
+}
+
+
+/*------main section------*/
+/*------------------------*/
+
+.mainSection{
+ padding:0 !important;
+}
+
+/* 1/2 --- introduction - leftside */
+/*============================*/
+/*test*/
+/*============================*/
+
+.bodyLandingPage {
+  background: #333;
+  /*color: #fff;*/
+}
+.introSection{
+  margin-top:2%;
+}
+.whatNew {
+  padding-top:40px;
+  padding-bottom:30px;
+  color: #3b94a5;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: .70;
+  position: relative;
+ }
+
+.display-4{
+  font-weight: 700;
+  font-size: 7.6em;
+  line-height: .70;
+  position: relative;
+  z-index: 2;
+  color: #3b94a5;
+}
+
+.r{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  align-content: center;
+}
+
+#home-section{
+
+  /* background: url("../img/home.jpg") no-repeat; */
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 600px; }
+  #home-section .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 102%;
+    min-height: 500px; }
+  #home-section .home-inner {
+    padding-top: 9%; }
+  #home-section .card-form {
+    opacity: 0.8;
+    background-color: #3b94a5 !important;
+    color: black;
+  }
+
+  #home-section .fa {
+    color: #008ed6;
+    background: #fff;
+    /*padding: 4px;*/
+    border-radius: 5px;
+    font-size: 30px;
+  }
+
+#explore-section .fa, #share-section .fa {
+  color: #fff;
+  background: #333;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+#create-section .fa {
+  color: #008ed6;
+  background: #fff;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+#lastSite{
+  padding-top: 14%;
+  color: #fff;
+}
+
+#explore-head-section{
+  background-color:#343b40;
+  color:#fff;
+  padding-bottom: 50px;
+}
+
+.groupImg img{
+  border
+  width: 55px;
+  height: 55px;
+}
+
+ .groupImg p{
+   font-size: 18px;
+   font-family: 'Roboto', "sans-serif";
+   font-weight: bold;
+ }
+
+
+/* annimation */
+.content {
+  position: absolute;
+  top: 95%;
+  left: 65%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 160px;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  color: #ecf0f1;
+}
+
+.content__container {
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 40px;
+}
+
+.content__container:before {
+  content: '{';
+    color: #3b94a5 !important;
+  left: 0;
+}
+
+.content__container:after {
+  content: '}';
+  color: #3b94a5 !important;
+  position: absolute;
+  right: 0;
+}
+
+.content__container:after, .content__container:before {
+  position: absolute;
+  top: 0;
+  color: #16a085;
+  font-size: 42px;
+  line-height: 40px;
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: opacity;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.content__container__text {
+  display: inline;
+  float: left;
+  margin: 0px;
+  color: #3b94a5;
+}
+
+.content__container__list {
+  margin-top: 0;
+  padding-left: 110px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.content__container__list__item {
+  line-height: 40px;
+  margin: 0;
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes change {
+  0%, 12.66%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+  33.32%,45.98% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  49.98%,62.64% {
+    -webkit-transform: translate3d(0, -75%, 0);
+            transform: translate3d(0, -75%, 0);
+  }
+  66.64%,79.3% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  83.3%,95.96% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+}
+
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes change {
+  0%, 12.66%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+  33.32%,45.98% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  49.98%,62.64% {
+    -webkit-transform: translate3d(0, -75%, 0);
+            transform: translate3d(0, -75%, 0);
+  }
+  66.64%,79.3% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  83.3%,95.96% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+}
+
+.content {
+  margin-top: 125px;
+}
+
+/*2/3 --- divider betwwen introduction and sign Up form */
+/*.divider-wrapper{
+flex: 1 1;
+align-self: stretch;
+display: flex;
+justify-content: center;
+width:2%;
+}
+.divider{
+  width: 1px;
+  background-color: #f3f3f3;
+  margin:10px 0;
+}*/
+
+/*2/2 --- sign up form- right side*/
+.signUpSection{
+margin-top:6%;
+}
+
+/*submitbutton*/
+.btn-primary{
+background-color:#3292a6!important;
+border-color:#3292a6!important;
+}
+
+/*============================*/
+/*footer- used in all pages*/
+/*============================*/
+.footer{
+  width: 100%;
+ }
+
+.bg-primary{
+  background-color:#3292a6!important;
+}
+
+/*============================*/
+/*media/
+/*============================*/
+
+
+ @media only screen and (max-width: 1200px) {
+  .display-4{
+     font-size:5em;
+   }
+ }
+
+ @media only screen and (max-width: 1024px) {
+ .display-4{
+   font-size:5em;
+ }
+
+ .signUpSection{
+   margin-top: 30px;
+   margin-bottom:30px;
+  }
+
+ #home-section .dark-overlay{
+   min-height:410px;
+  }
+
+ #home-section{
+  min-height: 400px;
+ }
+ footer{
+  height: 5px!important;
+ }
+ #searchBar{
+  height:20px;
+ }
+}
+
+@media only screen and (max-width: 992px) {
+ .display-4{
+  font-size:3em;
+ }
+
+ #home-section{
+  min-height: 400px;
+ }
+}

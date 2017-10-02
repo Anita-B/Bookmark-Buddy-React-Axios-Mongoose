@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookmark Buddy</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+  <link rel="icon" type="png" href="img/favicon.png">
+  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top py-3">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/logo.svg" width="60" height="60" alt=""><h3 class="d-inline align-middle logoText"> Bookmark Buddy</h3>
+      </a>
+    <!-- hamburger menu -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- add -->
+          <button class="btn btn-primary btn-sm navBtn"><li class="nav-item">
+            <a href="#" class="nav-link navBtnText" data-toggle="modal" data-target="#addPostModal"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Add</a>
+          </li></button>
+          <!-- user -->
+          <button class="btn btn-primary btn-sm navBtn"><li class="nav-item">
+            <a href="#" class="nav-link navBtnText">&nbsp;User</a>
+          </li></button>
+          <!-- log out -->
+          <button class="btn btn-primary btn-sm navBtnlogout"><li class="nav-item">
+            <a href="#" class="nav-link navBtnText"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Log out</a>
+          </li></button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search Bar -->
+  <section id="searchBarContainer" class="text-white py-4">
+    <div class="container">
+      <div class="row">
+          <div >
+          <!-- <div class="col-lg-12"> -->
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn searchButton"  type="button"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+              </span>
+              <input id="searchBar" type="text" class="form-control" placeholder="Search for..." autocomplete="on">
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- table for search result -->
+
+  <section class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+                <table class="table">
+                <thead class="thead text-white">
+                  <tr class="tableHead">
+                    <th style='vertical-align:middle'>#</th>
+                    <th style='vertical-align:middle'>Title</th>
+                    <th style='vertical-align:middle'>Category</th>
+                    <th style='vertical-align:middle'>URL</th>
+                    <th style='vertical-align:middle'></th>
+                  </tr>
+                </thead>
+                <tbody  data-spy="scroll">
+                  <tr id="tableRowHolder" style='vertical-align:middle'>
+
+              <!--========= First Row - empty place holder =======-->
+
+                  </tr>
+                  <tr>
+                    <td scope="row">1</td>
+                    <td>javascript</td>
+                    <td>Web Development</td>
+                    <td><a href="#" class="aTable">www.code.com</a></td>
+                    <td>
+                      <a href="#"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-share-square-o fa-lg" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-trash-o fa-lg" aria-hidden="true"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row">2</td>
+                    <td>Node</td>
+                    <td>Web Development</td>
+                    <td><a href="#" class="aTable">www.code.com</a></td>
+                    <td>
+                      <a href="#"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-share-square-o fa-lg" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-trash-o fa-lg" aria-hidden="true"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row">3</td>
+                    <td>javascript</td>
+                    <td>Web Development</td>
+                    <td><a href="#" class="aTable">www.code.com</a></td>
+                    <td>
+                      <a href="#"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-share-square-o fa-lg" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-trash-o fa-lg" aria-hidden="true"></i></a>
+                    </td>
+                  </tr>
+
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+      <footer id="main-footer" class="py-3 bg-primary text-white fixed-bottom footerColor">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-6 ml-auto">
+              <p class="lead"></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+  <!-- POST MODAL -->
+  <div class="modal fade" id="addPostModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Add Site</h5>
+          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="URL">URL</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="category">Category</label>
+              <select class="form-control">
+
+  <!-- The below values are just place holders for designing if you guys are able to write the code so the user can add their own categorys and the new ones will show up in the users dropdown menu -->
+
+                <option value="">java</option>
+                <option value="">React</option>
+                <option value="">Ruby</option>
+                <option value="">C++</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="file">Image Upload</label>
+              <input type="file" class="form-control-file">
+
+            </div>
+            <div class="form-group">
+              <label for="body">Note</label>
+              <textarea name="editor1" class="form-control"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary cancleBtn" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-primary saveBtn" data-dismiss="modal">Save Changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/navbar-fixed.js"></script>
+  <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+  <!-- able user to use edit their note as they want -->
+  <script>
+    CKEDITOR.replace( 'editor1' );
+  </script>
+</body>
+</html>
